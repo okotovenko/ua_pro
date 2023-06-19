@@ -315,6 +315,11 @@ body {
   z-index: 2;
 }
 
+.main__container > picture {
+  max-width: 50rem;
+  max-height: 50rem;
+}
+
 .main__container > picture source,
 .main__container > picture img {
   position: absolute;
@@ -322,8 +327,8 @@ body {
   top: 3.125rem;
   width: 100%;
   height: 100%;
-  max-width: 38.75rem;
-  max-height: 38.75rem;
+  max-width: 50rem;
+  max-height: 50rem;
   -o-object-fit: cover;
      object-fit: cover;
   pointer-events: none;
@@ -378,6 +383,16 @@ body {
           filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
 }
 
+.main__img picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+      -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+  -webkit-filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
+          filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
+}
+
 .main__img picture img,
 .main__img picture source {
   width: 100%;
@@ -385,6 +400,13 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+      -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+  -webkit-filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
+          filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
 }
 
 .main__img::before {
