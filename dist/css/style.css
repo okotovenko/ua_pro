@@ -645,7 +645,14 @@ body::after {
   display: flex;
 }
 
-.video__left img {
+.video__left > img,
+.video__left > picture {
+  width: 100%;
+  height: 100%;
+}
+
+.video__left > picture source,
+.video__left > picture img {
   width: 100%;
   height: 100%;
 }
@@ -673,6 +680,7 @@ body::after {
 }
 
 .video__left ._icon-play-btn::before {
+  padding-left: 0.625rem;
   font-size: 3.75rem;
   color: #ffffff;
   -webkit-transition: all 0.3s ease 0s;
