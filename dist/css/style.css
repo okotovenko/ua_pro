@@ -368,7 +368,7 @@ body::after {
 }
 
 .subtitle span {
-  color: #94C47D;
+  color: #6AA84F;
 }
 
 .header {
@@ -588,7 +588,7 @@ body::after {
   padding-left: 1.25rem;
   text-align: left;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .video__container {
@@ -612,7 +612,6 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Roboto";
   text-align: center;
   font-weight: 500;
   max-width: 85%;
@@ -879,7 +878,7 @@ body::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  line-height: 110%;
+  line-height: 120%;
 }
 
 .components__text h4 {
@@ -909,8 +908,8 @@ body::after {
   width: 100%;
   height: 100%;
   max-width: 25rem;
-  -webkit-filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
-          filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
+  -webkit-filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, 0.54));
+          filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, 0.54));
 }
 
 .components__center > picture source,
@@ -918,8 +917,8 @@ body::after {
   width: 100%;
   height: 100%;
   max-width: 25rem;
-  -webkit-filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
-          filter: drop-shadow(5px 20px 30px rgba(0, 0, 0, 0.54));
+  -webkit-filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, 0.54));
+          filter: drop-shadow(5px 10px 20px rgba(0, 0, 0, 0.54));
 }
 
 .components__center .components__text:nth-child(2) h4::before {
