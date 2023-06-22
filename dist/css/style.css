@@ -801,13 +801,7 @@ body::after {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 0.3125rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
 }
 
 .components h4 span {
@@ -1032,6 +1026,12 @@ body::after {
   text-align: center;
 }
 
+.components__center h4 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .components__center > img,
 .components__center > picture {
   width: 100%;
@@ -1052,7 +1052,7 @@ body::after {
 
 .components__center .components__text:nth-child(2) h4::after {
   top: -7.8125rem;
-  left: 11.25rem;
+  left: 3.125rem;
 }
 
 .components__center .components__text:nth-child(2) h4 > img,
@@ -1061,7 +1061,7 @@ body::after {
   position: absolute;
   max-width: 6.25rem;
   top: -3.75rem;
-  left: 9.375rem;
+  left: 1.25rem;
   -webkit-transform: rotate(-100deg);
       -ms-transform: rotate(-100deg);
           transform: rotate(-100deg);
@@ -1086,6 +1086,12 @@ body::after {
       -ms-flex-pack: start;
           justify-content: start;
   text-align: left;
+}
+
+.components__right h4 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .components__right .components__text:nth-child(1) h4::after {
@@ -1157,20 +1163,20 @@ body::after {
 }
 
 .components__right .components__text:nth-child(3) h4::after {
-  bottom: 1.4375rem;
-  left: -9.6875rem;
+  bottom: 2.1875rem;
+  left: -8.75rem;
 }
 
 .components__right .components__text:nth-child(3) h4 > img,
 .components__right .components__text:nth-child(3) h4 > picture {
   width: 100%;
   position: absolute;
-  max-width: 8.75rem;
+  max-width: 11.25rem;
   bottom: 0.3125rem;
-  left: -0.3125rem;
-  -webkit-transform: rotate(190deg);
-      -ms-transform: rotate(190deg);
-          transform: rotate(190deg);
+  left: -0.625rem;
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
   -webkit-transform-origin: left;
       -ms-transform-origin: left;
           transform-origin: left;
@@ -1184,9 +1190,9 @@ body::after {
   max-width: 8.75rem;
   bottom: 0.3125rem;
   left: -0.3125rem;
-  -webkit-transform: rotate(190deg);
-      -ms-transform: rotate(190deg);
-          transform: rotate(190deg);
+  -webkit-transform: rotate(195deg);
+      -ms-transform: rotate(195deg);
+          transform: rotate(195deg);
   -webkit-transform-origin: left;
       -ms-transform-origin: left;
           transform-origin: left;
@@ -1220,6 +1226,16 @@ body::after {
 @media (min-width: 47.99875em) {
   .components__points-container {
     display: none;
+  }
+
+  .components h4 span {
+    display: none;
+  }
+
+  .components__right h4 {
+    -ms-flex-item-align: left;
+        -ms-grid-row-align: left;
+        align-self: left;
   }
 }
 
@@ -1813,7 +1829,6 @@ body::after {
 
   .text__container p {
     padding-left: 0;
-    text-align: center;
   }
 
   .video__text {
@@ -1851,6 +1866,11 @@ body::after {
 
   .components__content {
     width: 100%;
+  }
+
+  .components h4 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 
   .components h4::before,
